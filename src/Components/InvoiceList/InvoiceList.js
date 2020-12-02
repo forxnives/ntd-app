@@ -8,7 +8,11 @@ const InvoiceList = props => (
         <Datagrid rowClick="edit">
             {/* <TextField source="id" /> */}
             <TextField source="invoiceDetails.number" />
-            <ReferenceField source="blockId" reference="blocks"><TextField source="id" /></ReferenceField>
+            <ReferenceField source="depositId" reference="deposits">
+                
+                <TextField source="id" />
+            
+            </ReferenceField>
             <BooleanField source="paymentRecieved" />
             <BooleanField source="cancellation.cancelled" />
             <BooleanField source="return.returned" />

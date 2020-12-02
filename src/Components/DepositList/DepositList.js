@@ -3,7 +3,7 @@ import * as React from "react";
 import { List, Datagrid, TextField, ReferenceField, BooleanField } from 'react-admin'
 
 
-const BlockList = props => (
+const DepositList = props => (
     <List {...props}>
         <Datagrid rowClick="edit">
             <TextField source="id" />
@@ -14,4 +14,4 @@ const BlockList = props => (
 );
 
 
-export default BlockList
+export default DepositList

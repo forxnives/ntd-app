@@ -1,393 +1,389 @@
 {
-    "users": [
-        {
-            "id": "user1",
-            "adminPermission": false,
-            "masterPermission": false,
-            "name": "Marc Robotham",
-            "username": "MarcNTDUser",
-            "password": "testpass1",
-            "displayPic": null
-        },
-        {
-            "id": "user2",
-            "adminPermission": true,
-            "masterPermission": false,
-            "name": "Eliberca Martinez",
-            "username": "EliNTDAdmin",
-            "password": "testpass2",
-            "displayPic": null
-        },
-        {
-            "id": "user3",
-            "adminPermission": true,
-            "masterPermission": true,
-            "name": "Felicia Perez",
-            "username": "FelNTDmaster",
-            "password": "testpass3",
-            "displayPic": null
-        }
-
-    ],
-
-
-    "invoices": [
-
-        {
-            "id": "i1",
-            "invoiceDetails": {
-                "number": "17100",
-                "customer": "BUS0001",
-                "price": "3000.00"
-            },
-            "blockId": "block1",
-            "paymentRecieved": true,
-            "cancellation": {
-                "cancelled": false,
-                "docId": null
-            },
-            "return": {
-                "returned": false,
-                "returnAmount": null,
-                "docId": null
-            },
-            "paymentMethod": {
-                "method": "cash",
-                "docId": null
-            }
-        },
-        {
-            "id": "i2",
-            "invoiceDetails": {
-                "number": "17101",
-                "customer": "BEL0001",
-                "price": "2000.00"
-            },
-            "blockId": "block1",
-            "paymentRecieved": true,
-            "cancellation": {
-                "cancelled": false,
-                "docId": null
-            },
-            "return": {
-                "returned": true,
-                "returnAmount": "1000",
-                "docId": "returnID1"
-            },
-            "paymentMethod": {
-                "method": "cash",
-                "docId": null
-            }
-        },
-        {
-            "id": "i3",
-            "invoiceDetails": {
-                "number": "17102",
-                "customer": "CAR0001",
-                "price": "4000.00"
-            },
-            "blockId": "block1",
-            "paymentRecieved": false,
-            "cancellation": {
-                "cancelled": true,
-                "docId": "cancelID1"
-            },
-            "return": {
-                "returned": false,
-                "returnAmount": null,
-                "docId": null
-            },
-            "paymentMethod": {
-                "method": "cash",
-                "docId": null
-            }
-        },
-        {
-            "id": "i4",
-            "invoiceDetails": {
-                "number": "17103",
-                "customer": "HEA0002",
-                "price": "5000.00"
-            },
-            "blockId": "block1",
-            "paymentRecieved": true,
-            "cancellation": {
-                "cancelled": false,
-                "docId": null
-            },
-            "return": {
-                "returned": false,
-                "returnAmount": null,
-                "docId": null
-            },
-            "paymentMethod": {
-                "method": "cash",
-                "docId": null
-            }
-        },
-        {
-            "id": "i5",
-            "invoiceDetails": {
-                "number": "17104",
-                "customer": "SAN0001",
-                "price": "10000.00"
-            },
-            "blockId": "block1",
-            "paymentRecieved": true,
-            "cancellation": {
-                "cancelled": false,
-                "docId": null
-            },
-            "return": {
-                "returned": false,
-                "returnAmount": null,
-                "docId": null
-            },
-            "paymentMethod": {
-                "method": "scotia #20192",
-                "docId": "chequeID1"
-            }
-        },
-        {
-            "id": "i6",
-            "invoiceDetails": {
-                "number": "17105",
-                "customer": "RUS0001",
-                "price": "3500.00"
-            },
-            "blockId": "block1",
-            "paymentRecieved": true,
-            "cancellation": {
-                "cancelled": false,
-                "docId": null
-            },
-            "return": {
-                "returned": false,
-                "returnAmount": null,
-                "docId": null
-            },
-            "paymentMethod": {
-                "method": "cash",
-                "docId": null
-            }
-        },
-        {
-            "id": "i7",
-            "invoiceDetails": {
-                "number": "17106",
-                "customer": "SEA0002",
-                "price": "4500.00"
-            },
-            "blockId": "block1",
-            "paymentRecieved": false,
-            "cancellation": {
-                "cancelled": true,
-                "docId": "cancelID2"
-            },
-            "return": {
-                "returned": false,
-                "returnAmount": null,
-                "docId": null
-            },
-            "paymentMethod": {
-                "method": "cash",
-                "docId": null
-            }
-        },
-        {
-            "id": "i8",
-            "invoiceDetails": {
-                "number": "17107",
-                "customer": "BAK0001",
-                "price": "24000.00"
-            },
-            "blockId": "block1",
-            "paymentRecieved": false,
-            "cancellation": {
-                "cancelled": false,
-                "docId": null
-            },
-            "return": {
-                "returned": false,
-                "returnAmount": null,
-                "docId": null
-            },
-            "paymentMethod": {
-                "method": "online",
-                "docId": "onlineID1"
-            }
-        },
-        {
-            "id": "i9",
-            "invoiceDetails": {
-                "number": "17108",
-                "customer": "SHA0001",
-                "price": "1570.00"
-            },
-            "blockId": "block1",
-            "paymentRecieved": true,
-            "cancellation": {
-                "cancelled": false,
-                "docId": null
-            },
-            "return": {
-                "returned": false,
-                "returnAmount": null,
-                "docId": null
-            },
-            "paymentMethod": {
-                "method": "cash",
-                "docId": null
-            }
-        },
-        {
-            "id": "i10",
-            "invoiceDetails": {
-                "number": "17109",
-                "customer": "SWE0001",
-                "price": "550.00"
-            },
-            "blockId": "block1",
-            "paymentRecieved": true,
-            "cancellation": {
-                "cancelled": false,
-                "docId": null
-            },
-            "return": {
-                "returned": false,
-                "returnAmount": null,
-                "docId": null
-            },
-            "paymentMethod": {
-                "method": "cibc #20912",
-                "docId": "chequeID2"
-            }
-        },
-        {
-            "id": "i11",
-            "invoiceDetails": {
-                "number": "17110",
-                "customer": "SUN0002",
-                "price": "8000.00"
-            },
-            "blockId": null,
-            "paymentRecieved": true,
-            "cancellation": {
-                "cancelled": false,
-                "docId": null
-            },
-            "return": {
-                "returned": false,
-                "returnAmount": null,
-                "docId": null
-            },
-            "paymentMethod": {
-                "method": "cash",
-                "docId": null
-            }
-        },
-        {
-            "id": "i12",
-            "invoiceDetails": {
-                "number": "17111",
-                "customer": "GKF0001",
-                "price": "32000.00"
-            },
-            "blockId": null,
-            "paymentRecieved": true,
-            "cancellation": {
-                "cancelled": false,
-                "docId": null
-            },
-            "return": {
-                "returned": true,
-                "returnAmount": "200",
-                "docId": "returnID2"
-            },
-            "paymentMethod": {
-                "method": "cash",
-                "docId": null
-            }
-        }
-
-    ],
-
-    "blocks": [{
-        "id": "block1",
-        "submissionDate": "11.20.20",
-        "approval": {
-            "pending": false,
-            "approved": false,
-            "approvedBy": null
-        }
-    }],
-
-    "documents": [
-
-        {   
-            "id":"returnID1",
-            "invoiceId": "i2",
-            "blockId": "block1",
-            "userId": "user1",
-            "type": "return",
-            "data": "file/path"
-
-        },
-
-        {   
-            "id":"returnID2",
-            "invoiceId": "i12",
-            "blockId": "block1",
-            "userId": "user1",
-            "type": "return",
-            "data": "file/path"
-
-        },
-        {   
-            "id":"cancelID1",
-            "invoiceId": "i3",
-            "blockId": "block1",
-            "userId": "user1",
-            "type": "cancellation",
-            "data": "file/path"
-
-        },
-        {   
-            "id":"cancelID2",
-            "invoiceId": "i7",
-            "blockId": "block1",
-            "userId": "user1",
-            "type": "cancellation",
-            "data": "file/path"
-
-        },
-        {   
-            "id":"chequeID1",
-            "invoiceId": "i5",
-            "blockId": "block1",
-            "userId": "user1",
-            "type": "cheque",
-            "data": "file/path"
-
-        },
-        {   
-            "id":"chequeID2",
-            "invoiceId": "i10",
-            "blockId": "block1",
-            "userId": "user1",
-            "type": "cheque",
-            "data": "file/path"
-
-        },        {   
-            "id":"onlineID1",
-            "invoiceId": "i8",
-            "blockId": "block1",
-            "userId": "user1",
-            "type": "online payment",
-            "data": "file/path"
-
-        }
-
-
-    ]
+  "users": [
+    {
+      "id": "user1",
+      "adminPermission": false,
+      "masterPermission": false,
+      "name": "Marc Robotham",
+      "username": "MarcNTDUser",
+      "password": "testpass1",
+      "displayPic": null
+    },
+    {
+      "id": "user2",
+      "adminPermission": true,
+      "masterPermission": false,
+      "name": "Eliberca Martinez",
+      "username": "EliNTDAdmin",
+      "password": "testpass2",
+      "displayPic": null
+    },
+    {
+      "id": "user3",
+      "adminPermission": true,
+      "masterPermission": true,
+      "name": "Felicia Perez",
+      "username": "FelNTDmaster",
+      "password": "testpass3",
+      "displayPic": null
+    }
+  ],
+  "invoices": [
+    {
+      "id": "i1",
+      "invoiceDetails": {
+        "number": "17100",
+        "customer": "BUS0001",
+        "price": "3000.00"
+      },
+      "depositId": "1",
+      "paymentRecieved": true,
+      "cancellation": {
+        "cancelled": false,
+        "docId": null
+      },
+      "return": {
+        "returned": false,
+        "returnAmount": null,
+        "docId": null
+      },
+      "paymentMethod": {
+        "method": "cash",
+        "docId": null
+      }
+    },
+    {
+      "id": "i2",
+      "invoiceDetails": {
+        "number": "17101",
+        "customer": "BEL0001",
+        "price": "2000.00"
+      },
+      "depositId": "1",
+      "paymentRecieved": true,
+      "cancellation": {
+        "cancelled": false,
+        "docId": null
+      },
+      "return": {
+        "returned": true,
+        "returnAmount": "1000",
+        "docId": "returnID1"
+      },
+      "paymentMethod": {
+        "method": "cash",
+        "docId": null
+      }
+    },
+    {
+      "id": "i3",
+      "invoiceDetails": {
+        "number": "17102",
+        "customer": "CAR0001",
+        "price": "4000.00"
+      },
+      "depositId": "1",
+      "paymentRecieved": false,
+      "cancellation": {
+        "cancelled": true,
+        "docId": "cancelID1"
+      },
+      "return": {
+        "returned": false,
+        "returnAmount": null,
+        "docId": null
+      },
+      "paymentMethod": {
+        "method": "cash",
+        "docId": null
+      }
+    },
+    {
+      "id": "i4",
+      "invoiceDetails": {
+        "number": "17103",
+        "customer": "HEA0002",
+        "price": "5000.00"
+      },
+      "depositId": "1",
+      "paymentRecieved": true,
+      "cancellation": {
+        "cancelled": false,
+        "docId": null
+      },
+      "return": {
+        "returned": false,
+        "returnAmount": null,
+        "docId": null
+      },
+      "paymentMethod": {
+        "method": "cash",
+        "docId": null
+      }
+    },
+    {
+      "id": "i5",
+      "invoiceDetails": {
+        "number": "17104",
+        "customer": "SAN0001",
+        "price": "10000.00"
+      },
+      "depositId": "1",
+      "paymentRecieved": true,
+      "cancellation": {
+        "cancelled": true,
+        "docId": null
+      },
+      "return": {
+        "returned": true,
+        "returnAmount": null,
+        "docId": null
+      },
+      "paymentMethod": {
+        "method": "scotia #20192",
+        "docId": "chequeID1"
+      }
+    },
+    {
+      "id": "i6",
+      "invoiceDetails": {
+        "number": "17105",
+        "customer": "RUS0001",
+        "price": "3500.00"
+      },
+      "depositId": "1",
+      "paymentRecieved": true,
+      "cancellation": {
+        "cancelled": false,
+        "docId": null
+      },
+      "return": {
+        "returned": false,
+        "returnAmount": null,
+        "docId": null
+      },
+      "paymentMethod": {
+        "method": "cash",
+        "docId": null
+      }
+    },
+    {
+      "id": "i7",
+      "invoiceDetails": {
+        "number": "17106",
+        "customer": "SEA0002",
+        "price": "4500.00"
+      },
+      "depositId": "1",
+      "paymentRecieved": false,
+      "cancellation": {
+        "cancelled": true,
+        "docId": "cancelID2"
+      },
+      "return": {
+        "returned": false,
+        "returnAmount": null,
+        "docId": null
+      },
+      "paymentMethod": {
+        "method": "cash",
+        "docId": null
+      }
+    },
+    {
+      "id": "i8",
+      "invoiceDetails": {
+        "number": "17107",
+        "customer": "BAK0001",
+        "price": "24000.00"
+      },
+      "depositId": "1",
+      "paymentRecieved": false,
+      "cancellation": {
+        "cancelled": false,
+        "docId": null
+      },
+      "return": {
+        "returned": true,
+        "returnAmount": null,
+        "docId": null
+      },
+      "paymentMethod": {
+        "method": "online",
+        "docId": "onlineID1"
+      }
+    },
+    {
+      "id": "i9",
+      "invoiceDetails": {
+        "number": "17108",
+        "customer": "SHA0001",
+        "price": "1570.00"
+      },
+      "depositId": "1",
+      "paymentRecieved": true,
+      "cancellation": {
+        "cancelled": false,
+        "docId": null
+      },
+      "return": {
+        "returned": false,
+        "returnAmount": null,
+        "docId": null
+      },
+      "paymentMethod": {
+        "method": "cash",
+        "docId": null
+      }
+    },
+    {
+      "id": "i10",
+      "invoiceDetails": {
+        "number": "17109",
+        "customer": "SWE0001",
+        "price": "550.00"
+      },
+      "depositId": "1",
+      "paymentRecieved": true,
+      "cancellation": {
+        "cancelled": false,
+        "docId": null
+      },
+      "return": {
+        "returned": false,
+        "returnAmount": null,
+        "docId": null
+      },
+      "paymentMethod": {
+        "method": "cibc #20912",
+        "docId": "chequeID2"
+      }
+    },
+    {
+      "id": "i11",
+      "invoiceDetails": {
+        "number": "17110",
+        "customer": "SUN0002",
+        "price": "8000.00"
+      },
+      "depositId": null,
+      "paymentRecieved": true,
+      "cancellation": {
+        "cancelled": false,
+        "docId": null
+      },
+      "return": {
+        "returned": false,
+        "returnAmount": null,
+        "docId": null
+      },
+      "paymentMethod": {
+        "method": "cash",
+        "docId": null
+      }
+    },
+    {
+      "id": "i12",
+      "invoiceDetails": {
+        "number": "17111",
+        "customer": "GKF0001",
+        "price": "32000.00"
+      },
+      "depositId": null,
+      "paymentRecieved": true,
+      "cancellation": {
+        "cancelled": false,
+        "docId": null
+      },
+      "return": {
+        "returned": true,
+        "returnAmount": "200",
+        "docId": "returnID2"
+      },
+      "paymentMethod": {
+        "method": "cash",
+        "docId": null
+      }
+    },
+    {
+      "invoiceDetails": {
+        "number": "18778"
+      },
+      "depositId": "1",
+      "id": "ggXkBsc",
+      "paymentRecieved": true,
+      "cancellation": {
+        "cancelled": true
+      }
+    }
+  ],
+  "deposits": [
+    {
+      "id": "1",
+      "submissionDate": "11.20.20",
+      "approval": {
+        "pending": false,
+        "approved": false,
+        "approvedBy": null
+      }
+    }
+  ],
+  "documents": [
+    {
+      "id": "returnID1",
+      "invoiceId": "i2",
+      "depositId": "1",
+      "userId": "user1",
+      "type": "return",
+      "data": "file/path"
+    },
+    {
+      "id": "returnID2",
+      "invoiceId": "i12",
+      "depositId": "1",
+      "userId": "user1",
+      "type": "return",
+      "data": "file/path"
+    },
+    {
+      "id": "cancelID1",
+      "invoiceId": "i3",
+      "depositId": "1",
+      "userId": "user1",
+      "type": "cancellation",
+      "data": "file/path"
+    },
+    {
+      "id": "cancelID2",
+      "invoiceId": "i7",
+      "depositId": "1",
+      "userId": "user1",
+      "type": "cancellation",
+      "data": "file/path"
+    },
+    {
+      "id": "chequeID1",
+      "invoiceId": "i5",
+      "depositId": "1",
+      "userId": "user1",
+      "type": "cheque",
+      "data": "file/path"
+    },
+    {
+      "id": "chequeID2",
+      "invoiceId": "i10",
+      "depositId": "1",
+      "userId": "user1",
+      "type": "cheque",
+      "data": "file/path"
+    },
+    {
+      "id": "onlineID1",
+      "invoiceId": "i8",
+      "depositId": "1",
+      "userId": "user1",
+      "type": "online payment",
+      "data": "file/path"
+    }
+  ]
 }
