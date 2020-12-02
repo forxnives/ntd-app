@@ -8,7 +8,7 @@ const DepositList = props => (
         <Datagrid rowClick="edit">
             <TextField source="id" />
             <TextField source="submissionDate" />
-            <BooleanField source="approval.pending" />
+            <BooleanField label='Ready for approval' source="approval.pending" />
         </Datagrid>
     </List>
 );

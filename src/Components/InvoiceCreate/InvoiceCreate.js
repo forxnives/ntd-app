@@ -5,15 +5,16 @@ import { Create, SimpleForm, ReferenceInput, SelectInput, TextInput, DateInput }
 
 
 
+
 const InvoiceCreate = props => (
 
     <Create {...props}>
         <SimpleForm>
             {/* <TextInput source="id" /> */}
             <TextInput source="invoiceDetails.number" />
-            <ReferenceInput source="depositId" reference="deposits"><SelectInput optionText="submissionDate" /></ReferenceInput>
+            {/* <ReferenceInput source="depositId" reference="deposits"><SelectInput optionText="submissionDate" /></ReferenceInput> */}
 
-            <DateInput source="paymentMethod.method" />
+            <TextInput label='Payment method' source="paymentMethod.method" />
         </SimpleForm>
     </Create>
 );

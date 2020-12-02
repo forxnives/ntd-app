@@ -1,18 +1,19 @@
 import * as React from "react";
 import { TextField, Edit, SimpleForm, DateInput, TextInput, ReferenceInput, BooleanInput, SelectInput } from 'react-admin';
+import InvoiceTitle from '../InvoiceTitle/InvoiceTitle';
 
 
 
 const InvoiceEdit = props => (
-    <Edit {...props}>
+    <Edit title={<InvoiceTitle />} {...props}>
         <SimpleForm>
             {/* <TextInput source="id" /> */}
-            <TextField source="invoiceDetails.number" />
+            <TextField label='Invoice' source="invoiceDetails.number" />
             <ReferenceInput source="depositId" reference="deposits"><SelectInput optionText="submissionDate" /></ReferenceInput>
             <BooleanInput source="paymentRecieved" />
-            <BooleanInput source="cancellation.cancelled" />
-            <BooleanInput source="return.returned" />
-            <DateInput source="paymentMethod.method" />
+            <BooleanInput label='Cancelled' source="cancellation.cancelled" />
+            <BooleanInput label='Returned' source="return.returned" />
+            <TextInput label='Payment method' source="paymentMethod.method" />
         </SimpleForm>
     </Edit>
 );
