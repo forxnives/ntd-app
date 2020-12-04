@@ -1,10 +1,12 @@
 import * as React from "react";
 import { TextField, Edit, SimpleForm, DateInput, TextInput, ReferenceInput, BooleanInput, SelectInput } from 'react-admin';
 import InvoiceTitle from '../InvoiceTitle/InvoiceTitle';
+import  Drawer  from '@material-ui/core/Drawer';
 
 
 
 const InvoiceEdit = props => (
+
     <Edit title={<InvoiceTitle />} {...props}>
         <SimpleForm>
             {/* <TextInput source="id" /> */}
@@ -16,6 +18,7 @@ const InvoiceEdit = props => (
             <TextInput label='Payment method' source="paymentMethod.method" />
         </SimpleForm>
     </Edit>
+
 );
 
 export default InvoiceEdit

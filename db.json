@@ -304,18 +304,8 @@
         "method": "cash",
         "docId": null
       }
-    },
-    {
-      "invoiceDetails": {
-        "number": "18778"
-      },
-      "depositId": "1",
-      "id": "ggXkBsc",
-      "paymentRecieved": true,
-      "cancellation": {
-        "cancelled": true
-      }
     }
+
   ],
   "deposits": [
     {

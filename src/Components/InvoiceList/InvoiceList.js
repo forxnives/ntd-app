@@ -1,46 +1,64 @@
 
 import * as React from "react";
+import { useState } from 'react';
 import { List, Datagrid, TextField, ReferenceField, BooleanField, SimpleList } from 'react-admin'
 import InvoiceFilter from '../InvoiceFilter/InvoiceFilter';
+import InvoiceEdit from '../InvoiceEdit/InvoiceEdit';
 import { useMediaQuery } from '@material-ui/core';
+import Drawer from '@material-ui/core/Drawer';
+
+
+
+
 
 
 
 const InvoiceList = props => {
 
+    const [drawerToggle, toggleDrawerToggle] = useState(false);
+
+    // console.log(props.history)
 
     const isSmall = useMediaQuery(theme => theme.breakpoints.down('sm'));
+
+    const handleDrawerToggle = (anchor) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+          return;
+        }
+    
+        // setState({ ...state, [anchor]: open });
+        console.log(anchor)
+      };
     
 
     return (
-    <List filters={<InvoiceFilter />} {...props}>
+        <React.Fragment>
+    <List sort={{ field: 'name', order: 'ASC' }} filters={<InvoiceFilter />} {...props}>
         {isSmall ? (
-            <SimpleList
-            primaryText={record => record.invoiceDetails.number}
+            <SimpleList 
+            primaryText={record => (<div onClick={(e) => toggleDrawerToggle(true)} >{record.invoiceDetails.number}</div>)}
             secondaryText={record => record.paymentMethod.method}
 
             tertiaryText={record => 
                 
-                
                 (
-
                 <ReferenceField label='Deposit' source='depositId' reference='deposits' basePath="productCode" record={record}>
                     <TextField source='submissionDate' />
                 </ReferenceField>
-
                 )
-
         }
             />
         ) : (
-            <Datagrid rowClick={(thing) => console.log(thing)}>
+            <Datagrid isRowSelectable={record => (false)} rowClick={(e) => console.log(e)} >
             {/* <TextField source="id" /> */}
             <TextField label='Invoice' source="invoiceDetails.number" />
+
             <ReferenceField source="depositId" reference="deposits">
                 
                 <TextField source="submissionDate" />
             
             </ReferenceField>
+
             <BooleanField source="paymentRecieved" />
             <BooleanField label='Cancelled' source="cancellation.cancelled" />
             <BooleanField label='Returned' source="return.returned" />
@@ -49,6 +67,16 @@ const InvoiceList = props => {
         )}
 
     </List>
+
+
+
+
+
+    <Drawer anchor='bottom' open={drawerToggle} onClose={() => toggleDrawerToggle(false)} >
+        <h1>THIS IS MY DRAWER</h1>
+
+    </Drawer>
+    </React.Fragment>
     );
 };
 
