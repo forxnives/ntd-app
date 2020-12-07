@@ -37,19 +37,23 @@
         "price": "3000.00"
       },
       "depositId": "1",
-      "paymentRecieved": true,
+      "paymentRecieved": false,
       "cancellation": {
-        "cancelled": false,
-        "docId": null
+        "cancelled": true
       },
       "return": {
-        "returned": false,
-        "returnAmount": null,
-        "docId": null
+        "returned": false
       },
       "paymentMethod": {
         "method": "cash",
         "docId": null
+      },
+      "cancellationFile": {
+        "rawFile": {
+          "path": "Multi Purpose Trade Manager User Guide.pdf"
+        },
+        "src": "blob:http://localhost:3000/24878081-b593-4617-b454-6fe1ebb1fd22",
+        "cancellationFile": "Multi Purpose Trade Manager User Guide.pdf"
       }
     },
     {
@@ -73,7 +77,8 @@
       "paymentMethod": {
         "method": "cash",
         "docId": null
-      }
+      },
+      "files": null
     },
     {
       "id": "i3",
@@ -85,13 +90,10 @@
       "depositId": "1",
       "paymentRecieved": false,
       "cancellation": {
-        "cancelled": true,
-        "docId": "cancelID1"
+        "cancelled": false
       },
       "return": {
-        "returned": false,
-        "returnAmount": null,
-        "docId": null
+        "returned": false
       },
       "paymentMethod": {
         "method": "cash",
@@ -131,8 +133,7 @@
       "depositId": "1",
       "paymentRecieved": true,
       "cancellation": {
-        "cancelled": true,
-        "docId": null
+        "cancelled": false
       },
       "return": {
         "returned": true,
@@ -305,7 +306,6 @@
         "docId": null
       }
     }
-
   ],
   "deposits": [
     {

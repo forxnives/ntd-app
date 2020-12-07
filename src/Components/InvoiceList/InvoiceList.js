@@ -1,7 +1,7 @@
 
 import * as React from "react";
 import { useState } from 'react';
-import { List, Datagrid, TextField, ReferenceField, BooleanField, SimpleList } from 'react-admin'
+import { List, Datagrid, TextField, ReferenceField, BooleanField, SimpleList, EditButton  } from 'react-admin'
 import InvoiceFilter from '../InvoiceFilter/InvoiceFilter';
 import InvoiceEdit from '../InvoiceEdit/InvoiceEdit';
 import { useMediaQuery } from '@material-ui/core';
@@ -49,7 +49,7 @@ const InvoiceList = props => {
         }
             />
         ) : (
-            <Datagrid isRowSelectable={record => (false)} rowClick={(e) => console.log(e)} >
+            <Datagrid isRowSelectable={record => (false)}  >
             {/* <TextField source="id" /> */}
             <TextField label='Invoice' source="invoiceDetails.number" />
 
@@ -63,6 +63,7 @@ const InvoiceList = props => {
             <BooleanField label='Cancelled' source="cancellation.cancelled" />
             <BooleanField label='Returned' source="return.returned" />
             <TextField label='Payment' source="paymentMethod.method" />
+            <EditButton />
         </Datagrid>
         )}
 
